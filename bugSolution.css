@@ -1,0 +1,20 @@
+Instead of using the `@apply` directive with pseudo-classes, apply the styles directly or use utility-first approach.  For instance, instead of:
+
+```css
+/* bug.css */
+.my-button { @apply bg-blue-500 hover:bg-blue-700; }
+```
+
+Use:
+
+```css
+/* bugSolution.css */
+.my-button {
+  background-color: #63B3ED;
+}
+
+.my-button:hover {
+  background-color: #3B82F6;
+}
+```
+This ensures that the `:hover` styles are correctly applied without relying on the `@apply` directive for pseudo-classes.
