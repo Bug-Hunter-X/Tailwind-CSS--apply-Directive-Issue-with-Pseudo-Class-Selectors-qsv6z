@@ -1,0 +1,1 @@
+This bug occurs when using Tailwind CSS's `@apply` directive with a complex class name that contains a pseudo-class selector like `:hover`. The `@apply` directive might not correctly apply the styles when the pseudo-class is involved, leading to unexpected visual behavior. For example, the `hover` styles might not be applied when the element is hovered over.
